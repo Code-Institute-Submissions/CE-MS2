@@ -2,26 +2,31 @@ body {
     color: #000;
 }
 
+.question {
+    font-size: 2rem;
+}
+
 .choice-container {
     display: flex;
     margin-bottom: 0.8rem;
     width: 100%;
-    border-radius: 4px;
-    background: rgb(18, 93, 255);
-    font-size: 3rem;
+    border-radius: 12px;
+    background: rgb(252, 252, 252);
+    font-size: 1.8rem;
     min-width: 80rem;
 }
 
 .choice-container:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(6, 103, 247, 0.5);
+    box-shadow: 0 0.4rem 1.4rem 0 rgb(255, 255, 255);
     transform: scale(1.02);
-    transform: transform 100m;
+    transform: transform 100ms;
 }
 
 .choice-prefix {
+    align-items: center;
     padding: 2rem 2.5rem;
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
 
 .choice-text {
@@ -46,6 +51,11 @@ body {
 
 .hud-main-text {
     text-align: center;
+}
+
+.hud-prefix {
+    font-size: 1.5rem;
+    color: rgb(252, 252, 252);
 }
 
 #progressBar {
