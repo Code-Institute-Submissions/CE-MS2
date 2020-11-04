@@ -1,5 +1,6 @@
 body {
     color: #000;
+    width: 100vw;
 }
 
 .question {
@@ -8,7 +9,7 @@ body {
 
 .choice-container {
     display: flex;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.9rem;
     width: 100%;
     border-radius: 12px;
     background: rgb(252, 252, 252);
@@ -56,21 +57,54 @@ body {
 .hud-prefix {
     font-size: 1.5rem;
     color: rgb(252, 252, 252);
+    margin-right: 2rem;
+}
+
+#score {
+    margin-right: 2rem;
+}
+
+#progressText {
+    margin-left: 4rem;
+    align-content: center;
+    text-align: center;
 }
 
 #progressBar {
     width: 20rem;
     height: 3rem;
     border: 0.2rem solid rgb(11, 223, 36);
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     border-radius: 50px;
     overflow: hidden;
+    margin-left: 2rem;
+    align-content: center;
 }
 
 #progressBarFull {
     height: 100%;
     background: rgb(11, 223, 36);
     width: 0%;
+}
+
+/* Buffer Before Game: (Build a loader from W3Schools) */
+
+.loader {
+    border: 1.6rem solid white;
+    border-radius: 50%;
+    border-top: 1.6rem solid rgb(0, 0, 0);
+    width: 12rem;
+    height: 12rem;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(360deg);
+}
 }
 
 @media screen and (max-width: 768px) {

@@ -1,8 +1,14 @@
-const question = document.querySelector('#question');
-const choices = Array.from(document.querySelectorAll('.choice-text'));
-const progressText = document.querySelector('#progressText');
-const scoreText = document.querySelector('#score');
-const progressBarFull = document.querySelector('#progressBarFull');
+//Declaring fundamental constants
+
+const question = document.getElementById("question");
+const choices = Array.from(document.getElementsByClassName("choice-text"));
+const progressText = document.getElementById('progressText');
+const scoreText = document.getElementById('score');
+const progressBarFull = document.getElementById('progressBarFull');
+const loader = document.getElementById("loader");
+const game = document.getElementById("game");
+
+//Defining Variables
 
 let currentQuestion = {};
 let acceptingAnswers = true;
@@ -10,52 +16,46 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestions = []
 
-let questions = [
-    {
-        question: "What is 2 + 2?",
-        choice1: "2",
-        choice2: "4",
-        choice3: "21",
-        choice4: "hello",
-        answer: "4",
-    },
+let questions = [];
 
-    {
-        question: "Where were the first computer animations produced?",
-        choice1: "Computer Laboratory, Germany",
-        choice2: "Russia",
-        choice3: "Rutherford Appleton Laboratory",
-        choice4: "hello",
-        answer: "Rutherford Appleton Laboratory",
-    },
+// Fetch function for questions from Open Trivia Database & Pulling API
 
-    {
-        question: "What year did the Titanic sink in the Atlantic Ocean?",
-        choice1: "1912",
-        choice2: "1915",
-        choice3: "1932",
-        choice4: "1908",
-        answer: "1912",
-    },
+fetch(
+    "https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple"
+)
+    .then(res => {
+        return res.json();
+    })
+    .then(loadedQuestions => {
+        console.log(loadedQuestions.results);
+        questions = loadedQuestions.results.map(loadedQuestion => {
+            const formattedQuestion = {
+                question: loadedQuestion.question
+            };
 
-    {
-        question: "What is the lifespan of a dragonfly?",
-        choice1: "24 hours",
-        choice2: "64 hours",
-        choice3: "1 week",
-        choice4: "5 days",
-        answer: "24 hours",
-    },
+            //Iterate through answer choices
 
-    {
-        question: "What is the name of the biggest technology company in South Korea?",
-        choice1: "Mobile Asia",
-        choice2: "Huawei",
-        choice3: "Oppo",
-        choice4: "Samsung",
-        answer: "Samsung",
-    },
-]
+            const answerChoices = [...loadedQuestion.incorrect_answers];
+            formattedQuestion.answer = Math.floor(Math.random() * 3) + 1;
+            answerChoices.splice(
+                formattedQuestion.answer - 1,
+                 0,
+                loadedQuestion.correct_answer);
+
+                answerChoices.forEach((choice, index) => {
+                    formattedQuestion["choice" + (index + 1)] = choice;
+                });
+
+                return formattedQuestion;
+        });
+        //Start Game function
+        startGame();
+    })
+
+    .catch(err => {
+        console.error(err);
+    });
+
 
 // Constants
 
@@ -67,10 +67,28 @@ startGame = () => {
     score = 0;
     availableQuestions = [...questions];
     getNewQuestion();
+    game.classList.remove("hidden");
+    loader.classList.add("hidden");
 };
 
 getNewQuestion = () => {
-    questionCounter++
+
+
+    if(availableQuestions.length == 0 || questionCounter >= MAX_QUESTIONS) {
+        //Save score after ending game
+        localStorage.setItem("mostRecentScore", score);
+        //Go to end page
+        return window.location.assign("/end.html");
+    }
+    questionCounter++;
+    
+    //Declare Progress Bar %
+    progressText.innerText = `Question: ${questionCounter}/${MAX_QUESTIONS}`;
+    
+    //Updates Progress Bar
+    
+    progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
+
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
     question.innerText = currentQuestion.question;
@@ -81,22 +99,42 @@ getNewQuestion = () => {
         });
 
         availableQuestions.splice(questionIndex, 1);
-
         acceptingAnswers = true;
 };
 
 choices.forEach(choice => {
-    choice.addEventListener("click", e => {
-        if (!acceptingAnswers) return;
+    choice.addEventListener('click', e => {
+        if(!acceptingAnswers) return;
 
         acceptingAnswers = false;
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset["number"];
-        console.log(selectedAnswer);
-        getNewQuestion();
+        
+        //Ternary operator to display whether selected answer is true/false
+        const classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
+        
+
+        //Increment score by 100 if answer is correct
+        if(classToApply == 'correct') {
+            incrementScore(SCORE_POINTS);
+        }
+
+        //Displays whether selected answer is correct by green/red styling on answer click
+        selectedChoice.parentElement.classList.add(classToApply);
+
+        setTimeout(() => {
+            selectedChoice.parentElement.classList.remove(classToApply);
+            getNewQuestion();
+        }, 800);
     });
 });
 
-startGame();
+incrementScore = num => {
+    score +=num;
+    scoreText.innerText = score;
+};
+
+
+
 
     
