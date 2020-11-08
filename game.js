@@ -103,6 +103,7 @@ getNewQuestion = () => {
         acceptingAnswers = true;
 };
 
+//Click event function for selecting displayed answers
 choices.forEach(choice => {
     choice.addEventListener('click', e => {
         if(!acceptingAnswers) return;

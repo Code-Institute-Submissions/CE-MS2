@@ -3,7 +3,7 @@ let randomNumber = parseInt((Math.random()*500)+1);
 const submit = document.querySelector('#subt');
 const userInput = document.querySelector('#guessField');
 const guessSlot = document.querySelector('.guesses');
-const remaining = document.querySelector('.lastResult').style.fontSize = "large";
+const remaining = document.querySelector('.lastResult');
 const startOver = document.querySelector('.resultParas');
 const lowOrHigh = document.querySelector('.lowOrHigh');
 const p = document.createElement('p');
@@ -47,7 +47,7 @@ function validateGuess(guess){
 function checkGuess(guess){
     //Display clue if guess was too high or too low
     if (guess === randomNumber){
-        displayMessage(`You guessed correctly!`);
+        displayMessage(`Congrats! You guessed correctly! The number was ` + randomNumber);
         endGame();
     } else if (guess < randomNumber) {
         displayMessage(`Too low! Try again!`);
@@ -60,7 +60,7 @@ function displayGuesses(guess){
     userInput.value = '';
     guessSlot.innerHTML += `${guess},  `;
     numGuesses++
-    remaining.innerHTML = `${10 - numGuesses}  `; //Subtracts after every failed guess
+    remaining.innerHTML = `${11 - numGuesses}  `; //Subtracts after every failed guess
 }
 
 function displayMessage(message){
@@ -89,7 +89,7 @@ function newGame(){
         numGuesses = 1;
         guessSlot.innerHTML = '';
         lowOrHi.innerHTML = '';
-        remaining.innerHTML = `${10 - numGuesses}  `;
+        remaining.innerHTML = `${11 - numGuesses}  `;
         userInput.removeAttribute('disabled');
         startOver.removeChild(p);
         playGame = true;

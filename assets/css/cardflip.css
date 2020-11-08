@@ -1,0 +1,208 @@
+.overlay-text {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    color: #fff;
+    font-family: Montserrat, serif;
+}
+
+.overlay-text.visible {
+    display: flex;
+    animation: overlay-grow 500ms forwards;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-text-small {
+    display: flex;
+    flex-direction: column;
+    animation: overlay-grow 500ms forwards;
+}
+
+@keyframes overlay-grow {
+    from {
+        background-color: rgb(0, 0, 0, 0.8);
+        font-size: 0;
+    }
+    to {
+        background-color: rgb(0, 0, 0, 0.8);
+        font-size: 7em;
+    }
+}
+
+.page-title {
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    margin-top: 1.8rem;
+}
+
+.game-info {
+    font-size: 2.2rem;
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    height: 175px;
+    width: 125px;
+    position: relative;
+}
+
+.card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    backface-visibility: hidden;
+    border-radius: 12px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff;
+    transition: transform 500ms ease-in-out;
+}
+
+.card.visible .card-back {
+    transform: rotateY(-180deg);
+}
+
+.card.visible .card-front {
+    transform: rotateY(0);
+}
+
+.card-back {
+    border-color: #fff;
+}
+
+.card-front {
+    transform: rotateY(180deg);
+}
+
+.card1 {
+    height: 175px;
+    width: 123px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card2 {
+    height: 175px;
+    width: 123px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card3 {
+    height: 175px;
+    width: 123px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card4 {
+    height: 175px;
+    width: 123px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card5 {
+    height: 175px;
+    width: 123px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card6 {
+    height: 175px;
+    width: 123px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card7 {
+    height: 175px;
+    width: 123px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card8 {
+    height: 175px;
+    width: 123px;
+    justify-content: center;
+    align-items: center;
+}
+
+.question-mark {
+    width: 123px;
+    height: 175px;
+    overflow: hidden;
+    object-position: 50% 70%;
+}
+
+.card-face .card1 {
+    transition: transform .5s ease-in-out;
+}
+
+.card-face:hover .card1 {
+    transform: scale(1.15);
+}
+
+.card-back .question-mark {
+    transition: transform .5s ease-in-out;
+}
+
+.card-back:hover .question-mark {
+    transform: scale(1.25);
+}
+
+.game-info-container {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10px;
+    margin: 50px;
+    justify-content: center;
+    perspective: 500px;
+}
+
+
+/*-- End Card Game Styling --*/
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
