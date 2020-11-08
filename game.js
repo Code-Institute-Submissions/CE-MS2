@@ -1,4 +1,4 @@
-//Declaring fundamental constants
+//Declaring constants
 
 const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choice-text"));
@@ -18,10 +18,10 @@ let availableQuestions = []
 
 let questions = [];
 
-// Fetch function for questions from Open Trivia Database & Pulling API
+// Fetch function for questions from Open Trivia Database & Pulling API url
 
 fetch(
-    "https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple"
+    "https://opentdb.com/api.php?amount=10&category=18&difficulty=easy&type=multiple"
 )
     .then(res => {
         return res.json();
@@ -48,7 +48,10 @@ fetch(
 
                 return formattedQuestion;
         });
+        
         //Start Game function
+        game.classList.remove("hidden");
+        loader.classList.add("hidden");
         startGame();
     })
 
@@ -57,18 +60,16 @@ fetch(
     });
 
 
-// Constants
+// Score & number of question constants
 
 const SCORE_POINTS = 100
-const MAX_QUESTIONS = 5
+const MAX_QUESTIONS = 10
 
 startGame = () => {
     questionCounter = 0;
     score = 0;
     availableQuestions = [...questions];
     getNewQuestion();
-    game.classList.remove("hidden");
-    loader.classList.add("hidden");
 };
 
 getNewQuestion = () => {

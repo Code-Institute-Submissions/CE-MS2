@@ -23,11 +23,11 @@ with a goal of demonstrating my ability to design and develop a responsive websi
 
 ### Existing Features
 
-  * __Home page__ - An aesthetic yet minimal landing page that encapsulates the style involved within the skateboarding community
+  * __Home page__ - An aesthetic yet minimal landing page that allows the user to navigate to the game or list of current high scores.
 
-  * __About Page__ - An aesthetic landing page that demonstrates the purpose of the site and the vision of the website creator.
+  * __Trivia Page__ - An aesthetic landing page that demonstrates the purpose of the site and the vision of the website creator.
 
-  * __Testimonials__  - A page which displays fictional user reviews of Go Skate using a carousel image slider.
+  * __High Scores__  - A page which displays the current high scores of users who have taken the trivia quiz
 
   * __Resume__  -The latest edition of my resume.  This resume needs to be updated at the time of this writing to reflect my current/ongoing coding skill set and education.
 

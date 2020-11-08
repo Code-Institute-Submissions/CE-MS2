@@ -1,5 +1,5 @@
 #highScoresList {
-    list-style: none;
+    list-style: decimal;
     padding-left: 0;
     margin-bottom: 4rem;
     color: #fff;
@@ -13,4 +13,21 @@
 
 .high-score:hover {
     transform: scale(1.10);
+}
+
+#highscores {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
+    background-color: rgb(0, 0, 0);
+}
+
+#finalScore {
+    font-size: 5rem;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
 }

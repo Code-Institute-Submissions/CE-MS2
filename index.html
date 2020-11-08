@@ -27,16 +27,73 @@
 </head>
 
 <body>
-	<div class="container">
-        <div id="home" class="flex-column flex-center">
-            <h1>Welcome!</h1>
-            <h2>Choose one of the three games to play below</h2>
-            <a href="/guess.html" id="guess-btn" class="btn">Guess the number</a>
-            <a href="/cardflip.html" id="cardflip-btn" class="btn">Card Flip</a>
-            <a href="/game.html" id="quiz-btn" class="btn">Trivia Quiz</a>
-            <a href="/highscores.html" id="highscore-btn" class="btn">High Scores</a>
-        </div>
-    </div>
+	
+    <!--Nav Bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<div class="d-flex flex-grow-1">
+			<span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
+			<a class="navbar-brand" href="index.html">
+				Games Home
+			</a>
+			<div class="w-100 text-right">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar7">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+			</div>
+		</div>
+		<div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar7">
+			<ul class="navbar-nav ml-auto flex-nowrap">
+				<li class="nav-item">
+					<a href="index.html" class="nav-link">Home</a>
+				<li class="nav-item">
+					<a href="guess.html" class="nav-link">Guess the number</a>
+				</li>
+				<li class="nav-item">
+					<a href="cardflip.html" class="nav-link">Card flip</a>
+				</li>
+				<li class="nav-item">
+					<a href="game.html" class="nav-link">Trivia Quiz</a>
+				</li>
+				<li class="nav-item">
+					<a href="highscores.html" class="nav-link">Trivia High Scores</a>
+				</li>
+
+
+			</ul>
+		</div>
+	</nav>
+      
+    <!--Main-->
+	<div class="container container-fluid">
+        <div class="space stars1"></div>
+		<div class="space stars2"></div>
+		<div class="space stars3"></div>
+        	<div id="home" class="flex-column flex-center">
+            	<h1>Welcome!</h1>
+            		<h2>Choose one of the three games to play below</h2>
+            			<a href="/guess.html" id="guess-btn" class="btn">Guess the number</a>
+            			<a href="/cardflip.html" id="cardflip-btn" class="btn">Card Flip</a>
+            			<a href="/game.html" id="quiz-btn" class="btn">Trivia Quiz</a>
+            			<a href="/highscores.html" id="highscore-btn" class="btn">Trivia High Scores</a>
+        	</div>
+	</div>
+	
+	<!--Footer-->
+	<footer>
+		<div class="row justify-content-center">
+
+			<div class="col-md-4 text-center">
+
+				<h6>Trivia</h6>
+					<a href="https://www.facebook.com/" target="_blank"><i class=" fa fa-facebook fa-lg"></i></a>
+					<a href="https://www.instagram.com/" target="_blank"><i class=" fa fa-instagram fa-lg"></i></a>
+					<a href="https://www.twitter.com/" target="_blank"><i class=" fa fa-twitter fa-lg"></i></a>
+			</div>
+			<hr class="footer-shell">
+			&copy; <small>Leo Morgan Games & Trivia! 2020</small>
+		</div>
+	</footer>
+	<!--End Footer-->
 
     <!--SCRIPTS-->
 

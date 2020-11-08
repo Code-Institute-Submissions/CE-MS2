@@ -1,0 +1,35 @@
+#guess {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+#guess-game-title {
+    margin-top: 3rem;
+}
+
+p {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.lastresult {
+    font-size: 5rem;
+}
+
+#newGame {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.lowOrHigh {
+    font-size: 1.8rem;
+    margin: 0;
+    color: #fff;
+}
+
+h4 {
+    color: #fff;
+}
+
+
