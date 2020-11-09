@@ -15,7 +15,6 @@
 
 #game {
     flex-direction: column;
-    display: flex;
     text-align: center;
     margin-top: 6rem;
 }
@@ -85,6 +84,7 @@
     margin-left: 4rem;
     align-content: center;
     text-align: center;
+    font: Montserrat, sans-serif;
 }
 
 #progressBar {
@@ -110,7 +110,7 @@
 .loader {
     border: 1.6rem solid white;
     border-radius: 50%;
-    border-top: 1.6rem solid rgb(0, 0, 0);
+    border-top: 1.6rem solid rgb(255, 255, 255);
     width: 12rem;
     height: 12rem;
     animation: spin 2s linear infinite;

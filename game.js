@@ -1,17 +1,17 @@
 //Declaring constants
 
-const question = document.getElementById("question");
-const choices = Array.from(document.getElementsByClassName("choice-text"));
+const question = document.getElementById('question');
+const choices = Array.from(document.getElementsByClassName('choice-text'));
 const progressText = document.getElementById('progressText');
 const scoreText = document.getElementById('score');
 const progressBarFull = document.getElementById('progressBarFull');
-const loader = document.getElementById("loader");
-const game = document.getElementById("game");
+const loader = document.getElementById('loader');
+const game = document.getElementById('game');
 
 //Defining Variables
 
 let currentQuestion = {};
-let acceptingAnswers = true;
+let acceptingAnswers = false; //true
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = []
@@ -30,17 +30,18 @@ fetch(
         console.log(loadedQuestions.results);
         questions = loadedQuestions.results.map(loadedQuestion => {
             const formattedQuestion = {
-                question: loadedQuestion.question
+                question: loadedQuestion.question,
             };
 
             //Iterate through answer choices
 
             const answerChoices = [...loadedQuestion.incorrect_answers];
-            formattedQuestion.answer = Math.floor(Math.random() * 3) + 1;
+            formattedQuestion.answer = Math.floor(Math.random() * 4) + 1;
             answerChoices.splice(
                 formattedQuestion.answer - 1,
                  0,
-                loadedQuestion.correct_answer);
+                loadedQuestion.correct_answer
+                );
 
                 answerChoices.forEach((choice, index) => {
                     formattedQuestion["choice" + (index + 1)] = choice;
@@ -50,8 +51,6 @@ fetch(
         });
         
         //Start Game function
-        game.classList.remove("hidden");
-        loader.classList.add("hidden");
         startGame();
     })
 
@@ -60,8 +59,8 @@ fetch(
     });
 
 
-// Score & number of question constants
 
+// Constants
 const SCORE_POINTS = 100
 const MAX_QUESTIONS = 10
 
@@ -70,12 +69,14 @@ startGame = () => {
     score = 0;
     availableQuestions = [...questions];
     getNewQuestion();
-};
+    game.classList.remove('hidden');
+    loader.classList.add('hidden');
+
+}
 
 getNewQuestion = () => {
 
-
-    if(availableQuestions.length == 0 || questionCounter >= MAX_QUESTIONS) {
+    if(availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         //Save score after ending game
         localStorage.setItem("mostRecentScore", score);
         //Go to end page
@@ -87,7 +88,6 @@ getNewQuestion = () => {
     progressText.innerText = `Question: ${questionCounter}/${MAX_QUESTIONS}`;
     
     //Updates Progress Bar
-    
     progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);

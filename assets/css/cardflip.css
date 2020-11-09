@@ -86,56 +86,7 @@
     transform: rotateY(180deg);
 }
 
-.card1 {
-    height: 175px;
-    width: 123px;
-    justify-content: center;
-    align-items: center;
-}
-
-.card2 {
-    height: 175px;
-    width: 123px;
-    justify-content: center;
-    align-items: center;
-}
-
-.card3 {
-    height: 175px;
-    width: 123px;
-    justify-content: center;
-    align-items: center;
-}
-
-.card4 {
-    height: 175px;
-    width: 123px;
-    justify-content: center;
-    align-items: center;
-}
-
-.card5 {
-    height: 175px;
-    width: 123px;
-    justify-content: center;
-    align-items: center;
-}
-
-.card6 {
-    height: 175px;
-    width: 123px;
-    justify-content: center;
-    align-items: center;
-}
-
-.card7 {
-    height: 175px;
-    width: 123px;
-    justify-content: center;
-    align-items: center;
-}
-
-.card8 {
+.card-value {
     height: 175px;
     width: 123px;
     justify-content: center;

@@ -88,21 +88,21 @@ class FlipnMatch {
 
 
     getCardType(card) {
-        return card.getElementsByClassName('card1')[0].src;
+        return card.getElementsByClassName('card-value')[0].src;
     }
 
     //Card Shuffle Function
-    shuffleCards() {
-        for(let i = this.cardsArray.length - 1; i > 0; i--) { //Fisher & Yates shuffle for loop method
-            let randInt = Math.floor(Math.random() * (i=1));
-            this.cardsArray[randInt].style.order = i;
-            this.cardsArray[i].style.order = randInt;
+    shuffleCards(cardsArray) {
+        for (let i = this.cardsArray.length - 1; i > 0; i--) { //Fisher & Yates shuffle for loop method
+             let randInt = Math.floor(Math.random() * (i=1));
+             this.cardsArray[randInt].style.order = i;
+             this.cardsArray[i].style.order = randInt;
         }
     }
 
     canFlipCard(card) {
         //Creates Boolean
-    return (!this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck)
+    return (!this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck);
     }
 }
 
