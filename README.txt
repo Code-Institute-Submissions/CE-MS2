@@ -143,11 +143,13 @@ To continue with cloning, you would;
 
 1. Navbar template from Bootstrap 4.
 
-2. Landing Page inspired by Codeinstitute Whiskey Drop 
-''Course > Bootstrapping Your Next Big Idea With Bootstrap 4 > Beyond Bootstrap > Customizing Our Landing Page''
- link : https://courses.codeinstitute.net/courses/course-v1:codeinstitute+FE+2017_T3/courseware/a4b90d17e5c94220a0f83f00ce7fa606/4b3b1b062b01424997c8fd052e177b8e/?child=first
+2. Card Game inspired by Web Dev Simplified on YouTube: "How to code a card matching game"
+   link - https://www.youtube.com/watch?v=28VfzEiJgy4&t=1765s
 
-3. All images used in this project taken from Unsplash. Free high resolution images. Link below
+3. Trivia Quiz idea inspired by Mentor Adbenga Adeye on our project inception & planning call. OpenTriviaDB supplying the API.
+   link - https://opentdb.com/
+
+4. All images used in this project taken from Unsplash. Free high resolution images. Link below
    https://unsplash.com/
    
 

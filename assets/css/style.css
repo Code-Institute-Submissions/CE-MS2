@@ -17,16 +17,15 @@ html,body
     height: 100vh;
     margin: 0px;
     padding: 0px;
-    background: #000;
+    background: black; /*--*/
 }
 
 h1 {
     padding-top: 5rem;
     font-size: 2.5rem;
-    color: #fff;
     margin-bottom: 1rem;
-    margin-top: 2rem;
     text-align: center;
+    color: #fff;
 }
 
 h2 {
@@ -39,12 +38,15 @@ h2 {
 
 .container {
     width: 100vw;
-    height: 60rem;
-    display: block;
+    height: 50rem;
+    display: flex;
     align-items: center;
     text-align: center;
+    justify-content: center;
     padding: 0;
-    margin: 0 auto;
+    margin-top: 5rem;
+    background: transparent; /*--*/
+    z-index: 5;
 }
 
 .home {
@@ -80,26 +82,64 @@ h2 {
   display: none;
 }
 
+/*--Star Background Styling--*/
+
+@keyframes move-clouds-back {
+  from {background-position: 0 0;}
+  to {background-position: 10000px 0;}
+}
+
+@keyframes move-twinkle-back {
+  from {background-position: 0 0}
+  to {background-position: -10000px 5000px}
+}
+
+.stars, .twinkling, .clouds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 60rem;
+  display: block;
+}
+
+.stars {
+  background: #000 url("../img/stars.png") no-repeat center center fixed;
+  z-index: 0;
+  height: 60rem;
+}
+
+.twinkling {
+  background: transparent url("../img/twinkling.png") repeat top center;
+  z-index: 1;
+  height: 60rem;
+  animation: move-twinkle-back 200s linear infinite;
+}
+
+.clouds {
+  background: transparent url("../img/clouds.png") repeat top center;
+  z-index: 1;
+  opacity: 0.9;
+  animation: move-clouds-back 200s linear infinite;
+}
 
 /*--Nav Styling--*/
 
 .navbar {
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 1rem;
     letter-spacing: 0.1rem;
-    background: rgb(31, 31, 31) !important;
+    background: rgb(32, 32, 32) !important;
     text-align: center;
-  }
-
-navbar-toggler {
-      color: #fff;
   }
 
   .navbar-brand {
       justify-content: center;
       text-align: center;
-      font-size: 2rem;
+      font-size: 1.5rem;
   }
 
   .nav-link {
@@ -108,10 +148,6 @@ navbar-toggler {
   
   .navbar a {
     color: #fff;
-  }
-  
-  .navbar img {
-    height: 3rem;
   }
   
   .navbar-nav li {
@@ -131,43 +167,7 @@ navbar-toggler {
     color: #000;
   }
 
-  /*--Footer Styling--*/
-
-  footer {
-    background-color: #464646;
-    color: #fff;
-    padding: 0.25rem 0;
-    margin-top: 2rem;
-    font-size: 2rem;
-  }
-  
-  footer h6 p {
-      font-size: 22px;
-  }
-  
-  footer img {
-    height: 1rem;
-    margin: 0.1rem 0;
-  }
-  
-  footer a {
-    color: #fff;
-  }
-  
-  footer svg.svg-inline--fa {
-    margin: 0.5rem 0.75rem;
-  }
-  
-  footer svg.svg-inline--fa:hover {
-    color: rgba(0, 0, 0, 0.25);
-  }
-  
-  hr.footer-shell {
-    margin: 1px;
-    border-top: 0.05rem solid rgba(0, 0, 0, 0.6);
-    width: 100%;
-    font-size: 18px;
-  }
+/*--Footer Styling--*/
 
 
 /*--Button Styling--*/

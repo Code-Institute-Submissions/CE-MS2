@@ -27,7 +27,20 @@
 }
 
 #finalScore {
-    font-size: 5rem;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 4rem;
     text-transform: uppercase;
-    margin-bottom: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.block-divider {
+  z-index: 100;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #fff;
+  top: 0;
+  left:0;
+  margin-bottom: 1.8rem;
 }

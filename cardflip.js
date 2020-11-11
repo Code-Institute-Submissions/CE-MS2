@@ -94,7 +94,7 @@ class FlipnMatch {
     //Card Shuffle Function
     shuffleCards(cardsArray) {
         for (let i = this.cardsArray.length - 1; i > 0; i--) { //Fisher & Yates shuffle for loop method
-             let randInt = Math.floor(Math.random() * (i=1));
+             let randInt = Math.floor(Math.random() * (i + 1));
              this.cardsArray[randInt].style.order = i;
              this.cardsArray[i].style.order = randInt;
         }

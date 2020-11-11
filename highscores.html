@@ -23,20 +23,67 @@
 		type="text/css">
 
 	<!--STYLE.CSS-->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen">
     <link rel="stylesheet" type="text/css" href="assets/css/highscores.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen">
 
 </head>
-
 <body>
+<!--Nav-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+	<div class="d-flex flex-grow-1">
+		<span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
+		<a class="navbar-brand" href="index.html">
+			Games Home
+		</a>
+		<div class="w-100 text-right">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar7">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		</div>
+	</div>
+	<div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar7">
+		<ul class="navbar-nav ml-auto flex-nowrap">
+			<li class="nav-item">
+				<a href="index.html" class="nav-link">Home</a>
+			<li class="nav-item">
+				<a href="guess.html" class="nav-link">Guess the number</a>
+			</li>
+			<li class="nav-item">
+				<a href="cardflip.html" class="nav-link">Card flip</a>
+			</li>
+			<li class="nav-item">
+				<a href="game.html" class="nav-link">Trivia Quiz</a>
+			</li>
+			<li class="nav-item">
+				<a href="highscores.html" class="nav-link">Trivia High Scores</a>
+			</li>
+
+
+		</ul>
+	</div>
+</nav>
+<!--End Nav-->
+
+<!--MAIN-->
+<div class="stars">
+<div class="twinkling">
+<div class="clouds">
     <div class="container">
         <div id="highScores" class="flex-center flex-column">
-            <h1 id="finalScore">High Scores</h1>
+			<h1 id="finalScore">High Scores</h1>
+			<hr class="block-divider">
             <ul id="highScoresList"></ul>
             <a class="btn" href="/">Go Home</a>
         </div>
-    </div>
+	</div>
+	</div>
+	</div>
+	</div>
+<!--End Main-->
 
+<!---Footer-->
+
+<!--End Footer-->
 
 <script src="highscores.js"></script>
 </body>

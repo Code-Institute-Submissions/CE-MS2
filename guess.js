@@ -7,6 +7,7 @@ const remaining = document.querySelector('.lastResult');
 const startOver = document.querySelector('.resultParas');
 const lowOrHigh = document.querySelector('.lowOrHigh');
 const p = document.createElement('p');
+const PlayAgain = document.getElementsByClassName('btn-play');
 let previousGuesses = [];
 let numGuesses = 1;
 let playGame = true;
@@ -72,9 +73,9 @@ function endGame(){
     userInput.value = '';
     //Disable user input button
     userInput.setAttribute('disabled', '');
-    //Display Start new Game Button
-          p.classList.add('button');
-          p.innerHTML = `<h2 id="newGame">Start New Game</h2>`
+    //Display Start new game prompt
+          button.classList.add('btn-play');
+          p.innerHTML = `<h2 id="newGame">Play Again</h2>`
     startOver.appendChild(p);
     playGame = false;
     newGame();
@@ -83,7 +84,7 @@ function endGame(){
 function newGame(){
     const newGameButton = document.querySelector('#newGame');
     newGameButton.addEventListener('click', function(){
-        //Pick a new random number
+        //Pick a new random number 
         randomNumber = parseInt((Math.random()*100)+1);
         previousGuesses = [];
         numGuesses = 1;
