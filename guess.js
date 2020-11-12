@@ -21,6 +21,7 @@ if (playGame){
     });
 }
 
+//CHeck guess validity function
 function validateGuess(guess){
     if (isNaN(guess)){
         alert('Please enter a valid number');
@@ -57,6 +58,7 @@ function checkGuess(guess){
     }
 }
 
+//Display previous guesses & number of attempts remaining function
 function displayGuesses(guess){
     userInput.value = '';
     guessSlot.innerHTML += `${guess},  `;
@@ -68,6 +70,7 @@ function displayMessage(message){
         lowOrHigh.innerHTML = `<h2>${message}</h2>`
 }
 
+//End Game function
 function endGame(){
     //Clear user input
     userInput.value = '';
@@ -81,6 +84,7 @@ function endGame(){
     newGame();
 }
 
+//New Game function
 function newGame(){
     const newGameButton = document.querySelector('#newGame');
     newGameButton.addEventListener('click', function(){

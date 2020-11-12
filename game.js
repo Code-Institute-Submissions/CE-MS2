@@ -74,6 +74,7 @@ startGame = () => {
 
 }
 
+//Iterates through questions remaining
 getNewQuestion = () => {
 
     if(availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {

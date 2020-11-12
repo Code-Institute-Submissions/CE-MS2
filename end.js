@@ -1,3 +1,4 @@
+//Declaring Constants
 const username = document.getElementById("username");
 const saveScoreBtn = document.getElementById('saveScoreBtn');
 const finalScore = document.getElementById("finalScore");
@@ -15,6 +16,7 @@ username.addEventListener("keyup", () => {
     saveScoreBtn.disabled = !username.value;
 });
 
+//Saves score when save button is clicked
 saveHighScore = e => {
     console.log("clicked the save button!");
     e.preventDefault();
@@ -30,6 +32,6 @@ saveHighScore = e => {
     highScores.splice(5);
 
     localStorage.setItem("highScores", JSON.stringify(highScores));
-    window.location.assign('/highscores.html')
+    window.location.assign('/highscores.html') //Stores highscores in highscore.html page
 
 };
