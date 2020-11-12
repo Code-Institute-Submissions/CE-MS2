@@ -17,26 +17,26 @@ with a goal of demonstrating my ability to design and develop a responsive websi
 
 1. Landing page link: https://wireframe.cc/0T2e8s
 
-![Sign Up Page Mock Wireframe](assets/img/signuppagebrowser.PNG)
+![Landing page initial mockup wireframe](assets/img/landingpagemockup.PNG)
 
 ![About page on Tablet device mockup](assets/img/abouttabletdevice.PNG)
 
 ### Existing Features
 
-  * __Home page__ - An aesthetic yet minimal landing page that allows the user to navigate to the game or list of current high scores.
+  * __Home page__ - An aesthetic & minimal landing page that allows the user to navigate through list of games or current Trivia high scores.
 
-  * __Trivia Page__ - An aesthetic landing page that demonstrates the purpose of the site and the vision of the website creator.
+  * __Guess the number__ - The first game of three the user can play. A random number is generated between 1-500 and the user has to guess it in 10 attempts with prompts after each input that lets the user know whether the guess was too high or too low!
 
-  * __High Scores__  - A page which displays the current high scores of users who have taken the trivia quiz
+  * __Card Flip__  - The second game of three the user can play. 16 face down cards are randomly assorted and the user has 100 seconds to match 18 pairs whilst also displaying the number of flips.
 
-  * __Resume__  -The latest edition of my resume.  This resume needs to be updated at the time of this writing to reflect my current/ongoing coding skill set and education.
+  * __Trivia__  - The third game of three which is a 10 question quiz using an API pulled from OpenTriviaDB. 100 points are awarded for each correct question and the top 5 scores will be displayed in the High Scores page.
 
-  * __Contact__  -An e-mail form to send a request for contact to me.  This form responds to input and sends an e-mail directly to my e-mail inbox at Yahoo.
+  * __High Scores__  - A high score page showing the top 5 user scores from the Trivia game.
 
 
   ###  Features Left to Implement
 
-  * __Events__ - A page that enables current users to view news of past events and upcoming events on site. 
+  * __High Scores__ - A page that displays a longer list of high scores from each respective game.
   
   
  ## Technologies Used
@@ -47,16 +47,19 @@ with a goal of demonstrating my ability to design and develop a responsive websi
  2. **CSS, or Cascading Style Sheets:**  Is used to style various elements on a web page via coloring, fonts, spacing, etc.  For further info, see this link;
  https://www.w3.org/Style/CSS/Overview.en.html
 
- 3. **Bootstrap:**  A CSS framework that assists the programmer in creating responsive, mobile first front-end web sites.  
+ 3. **JS, or Javascript:** is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and add further functionality to web pages. For further info on this language:
+ https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript
+
+ 4. **Bootstrap:**  A CSS framework that assists the programmer in creating responsive, mobile first front-end web sites.  
  https://getbootstrap.com/
 
- 4. **HTML Code Validator:**  Used to verify the integrity of HTML code written in my project. For further info, see this link;
+ 5. **HTML Code Validator:**  Used to verify the integrity of HTML code written in my project. For further info, see this link;
  https://validator.w3.org/
 
- 5. **Git**   Used to push code saved on my PC to GitHub. For further info, see this link;
+ 6. **Git & Git Bash**   Used to push code saved on my PC to GitHub. For further info, see this link;
 https://git-scm.com/downloads
 
- 6. **Gitpod:**  An online IDE also used for creating & saving code that runs in a browser, it does not have to be installed on your PC.
+ 7. **Gitpod:**  An online IDE also used for creating & saving code that runs in a browser, it does not have to be installed on your PC.
  https://www.gitpod.io/
 
  8. **GitHub:** A company that provides hosting for software development version control using Git. It is a subsidiary of Microsoft. For further info, see this link;

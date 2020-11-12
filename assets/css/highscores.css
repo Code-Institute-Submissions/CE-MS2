@@ -33,6 +33,8 @@
     text-transform: uppercase;
     margin-left: 1rem;
     margin-right: 1rem;
+    margin-top: 0.5rem;
+    padding: 0;
 }
 
 .block-divider {
@@ -42,5 +44,5 @@
   border: 1px solid #fff;
   top: 0;
   left:0;
-  margin-bottom: 1.8rem;
+  margin-bottom: 1.5rem;
 }

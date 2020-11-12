@@ -42,7 +42,7 @@
     margin-top: 0 auto;
     color: rgb(0, 0, 0);
     font-weight: 800;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 .choice-text {
@@ -50,6 +50,7 @@
     width: 100%;
     font-weight: 600;
     margin-top: 0.5rem;
+    font-size: 1.2rem;
 }
 
 .correct {
