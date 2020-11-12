@@ -58,6 +58,7 @@ class FlipnMatch {
             this.cardToCheck = card;
         }
     }
+    
     checkForCardMatch(card) {
         if(this.getCardType(card) === this.getCardType(this.cardToCheck))
             this.cardMatch(card, this.cardToCheck);
@@ -66,7 +67,7 @@ class FlipnMatch {
 
         this.cardToCheck = null;
     }
-
+    //If card selected src matches, add matched class
     cardMatch(card1, card2) {
         this.matchedCards.push(card1);
         this.matchedCards.push(card2);
@@ -76,7 +77,7 @@ class FlipnMatch {
         if(this.matchedCards.length === this.cardsArray.length)
         this.victory();
     }
-
+    //If cards selected src doesn't match, removes visible class (flips cards back facedown)
     cardMisMatch(card1, card2) {
         this.busy = true;
         setTimeout(() => {

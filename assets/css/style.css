@@ -107,7 +107,7 @@ h2 {
 .stars {
   background: #000 url("../img/stars.png") no-repeat center center fixed;
   z-index: 0;
-  height: 60rem;
+  height: 70rem;
 }
 
 .twinkling {
@@ -261,17 +261,6 @@ input {
   h2 {
       font-size: 1.5rem;
   }
-
-  .btn {
-    font-size: 1.5rem;
-    padding: 2rem 0;
-    width: 15rem;
-    text-align: center;
-    margin-bottom: 1.75rem;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    border-radius: 20px;
-    background: linear-gradient(90deg, rgb(255, 255, 255)0%, rgb(243, 243, 243) 100%);
-  }
+  
 }
 
