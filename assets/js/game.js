@@ -81,7 +81,7 @@ getNewQuestion = () => {
         //Save score after ending game
         localStorage.setItem("mostRecentScore", score);
         //Go to end page
-        return window.location.assign("/end.html");
+        return window.location.assign("/CE-MS2/end.html");
     }
     questionCounter++;
     
