@@ -2,27 +2,27 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-	<title>
-    Home
+    <title>
+        Guess the number!
     </title>
 
-	<!--BOOTSTRAP CSS-->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-		type="text/css">
+    <!--BOOTSTRAP CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        type="text/css">
 
-	<!--FONT AWESOME CSS-->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-		type="text/css">
+    <!--FONT AWESOME CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        type="text/css">
 
-	<!--HOVER.CSS-->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
-		type="text/css">
+    <!--HOVER.CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+        type="text/css">
 
-	<!--STYLE.CSS-->
+    <!--STYLE.CSS-->
     <link rel="stylesheet" type="text/css" href="assets/css/guess.css" media="screen">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen">
 </head>
@@ -31,84 +31,79 @@
     <!--Nav Bar-->
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-		<div class="d-flex flex-grow-1">
-			<span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
-			<a class="navbar-brand" href="index.html">
-				Games Home
-			</a>
-			<div class="w-100 text-right">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar7">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-			</div>
-		</div>
-		<div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar7">
-			<ul class="navbar-nav ml-auto flex-nowrap">
-				<li class="nav-item">
-					<a href="index.html" class="nav-link">Home</a>
-				<li class="nav-item">
-					<a href="guess.html" class="nav-link">Guess the number</a>
-				</li>
-				<li class="nav-item">
-					<a href="cardflip.html" class="nav-link">Card flip</a>
-				</li>
-				<li class="nav-item">
-					<a href="game.html" class="nav-link">Trivia Quiz</a>
-				</li>
-				<li class="nav-item">
-					<a href="highscores.html" class="nav-link">Trivia High Scores</a>
-				</li>
+        <div class="d-flex flex-grow-1">
+            <span class="w-100 d-lg-none d-block">
+                <!-- hidden spacer to center brand on mobile --></span>
+            <a class="navbar-brand" href="/CE-MS2/index.html">
+                Games Home
+            </a>
+            <div class="w-100 text-right">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar7">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar7">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+                <li class="nav-item">
+                    <a href="/CE-MS2/index.html" class="nav-link">Home</a>
+                <li class="nav-item">
+                    <a href="/CE-MS2/guess.html" class="nav-link">Guess the number</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/CE-MS2/cardflip.html" class="nav-link">Card flip</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/CE-MS2/game.html" class="nav-link">Trivia Quiz</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/CE-MS2/highscores.html" class="nav-link">Trivia High Scores</a>
+                </li>
 
 
-			</ul>
-		</div>
-	</nav>
-      
+            </ul>
+        </div>
+    </nav>
+
     <!--Main-->
     <div class="stars">
-    <div class="twinkling">
-    <div class="clouds">
-    <div class="container">
-        <div id="guess-landing" class="flex-column flex-center justify-center">
-            <h2 id="guess-game-title">A random number is generated between 1 - 500.</h2>
-        </br>
-                <h2>Try to guess it within 10 attempts.</h2>
-        </br>
-            <form class="guessForm">
-                <label for="guessField" id="guess">Guess the number below:</label>
-                <input type="text"  
-                    id="guessField" 
-                    class="guessField"
-                />
-                <input type="submit" 
-                    class="btn" 
-                    id="subt"
-                    value="Submit Guess"
-                    >
-                </button>
-            </form>
-            <div class="resultParas">
-                <h4>Previous Guesses: <span class="guesses"></span></h4>
-                <h4>Guesses Remaining: <span class="lastResult">10</span></h4>
-                <hr class="block-divider">
-                <p class="lowOrHigh"></p>
-                <a href="/guess.html" id="guess-play-btn" class="btn">Play Again</a>
+        <div class="twinkling">
+            <div class="clouds">
+                <div class="container">
+                    <div id="guess-landing" class="flex-column flex-center justify-center">
+                        <h2 id="guess-game-title">A random number is generated between 1 - 500.</h2>
+                        </br>
+                        <h2>Try to guess it within 10 attempts.</h2>
+                        </br>
+                        <form class="guessForm">
+                            <label for="guessField" id="guess">Guess the number below:</label>
+                            <input type="text" id="guessField" class="guessField" />
+                            <input type="submit" class="btn" id="subt" value="Submit Guess">
+                            </button>
+                        </form>
+                        <div class="resultParas">
+                            <h4>Previous Guesses: <span class="guesses"></span></h4>
+                            <h4>Guesses Remaining: <span class="lastResult">10</span></h4>
+                            <hr class="block-divider">
+                            <p class="lowOrHigh"></p>
+                            <a href="/CE-MS2/guess.html" id="guess-play-btn" class="btn">Play Again</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    </div>
-    </div>
-    </div>
-	<!--Footer-->
+    <!--Footer-->
 
-	<!--End Footer-->
+    <!--End Footer-->
 
     <!--SCRIPTS-->
-    <script src="guess.js"></script>
+    
+    <script src="assets/js/guess.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    	</script>
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
         </script>

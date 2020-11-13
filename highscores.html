@@ -7,8 +7,8 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 	<title>
-    Quiz
-    </title>
+		Highscores
+	</title>
 
 	<!--BOOTSTRAP CSS-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -24,69 +24,84 @@
 
 	<!--STYLE.CSS-->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="assets/css/highscores.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="assets/css/highscores.css" media="screen">
 
 </head>
+
 <body>
-<!--Nav-->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-	<div class="d-flex flex-grow-1">
-		<span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
-		<a class="navbar-brand" href="index.html">
-			Games Home
-		</a>
-		<div class="w-100 text-right">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar7">
-			<span class="navbar-toggler-icon"></span>
-		</button>
+	<!--Nav-->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<div class="d-flex flex-grow-1">
+			<span class="w-100 d-lg-none d-block">
+				<!-- hidden spacer to center brand on mobile --></span>
+			<a class="navbar-brand" href="index.html">
+				Games Home
+			</a>
+			<div class="w-100 text-right">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar7">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+		</div>
+		<div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar7">
+			<ul class="navbar-nav ml-auto flex-nowrap">
+				<li class="nav-item">
+					<a href="index.html" class="nav-link">Home</a>
+				<li class="nav-item">
+					<a href="guess.html" class="nav-link">Guess the number</a>
+				</li>
+				<li class="nav-item">
+					<a href="cardflip.html" class="nav-link">Card flip</a>
+				</li>
+				<li class="nav-item">
+					<a href="game.html" class="nav-link">Trivia Quiz</a>
+				</li>
+				<li class="nav-item">
+					<a href="highscores.html" class="nav-link">Trivia High Scores</a>
+				</li>
+
+
+			</ul>
+		</div>
+	</nav>
+	<!--End Nav-->
+
+	<!--MAIN-->
+	<div class="stars">
+		<div class="twinkling">
+			<div class="clouds">
+				<div class="container">
+					<div id="highScores" class="flex-center flex-column">
+						<hr class="block-divider">
+						<h1 id="finalScore">High Scores</h1>
+						<hr class="block-divider">
+						<ul id="highScoresList"></ul>
+						<a class="btn" href="/CE-MS2/index.html">Go Home</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-	<div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar7">
-		<ul class="navbar-nav ml-auto flex-nowrap">
-			<li class="nav-item">
-				<a href="index.html" class="nav-link">Home</a>
-			<li class="nav-item">
-				<a href="guess.html" class="nav-link">Guess the number</a>
-			</li>
-			<li class="nav-item">
-				<a href="cardflip.html" class="nav-link">Card flip</a>
-			</li>
-			<li class="nav-item">
-				<a href="game.html" class="nav-link">Trivia Quiz</a>
-			</li>
-			<li class="nav-item">
-				<a href="highscores.html" class="nav-link">Trivia High Scores</a>
-			</li>
+	<!--End Main-->
 
+	<!---Footer-->
 
-		</ul>
-	</div>
-</nav>
-<!--End Nav-->
+	<!--End Footer-->
 
-<!--MAIN-->
-<div class="stars">
-<div class="twinkling">
-<div class="clouds">
-    <div class="container">
-        <div id="highScores" class="flex-center flex-column">
-			<hr class="block-divider">
-			<h1 id="finalScore">High Scores</h1>
-			<hr class="block-divider">
-            <ul id="highScoresList"></ul>
-			<a class="btn" href="index.html">Go Home</a>
-        </div>
-	</div>
-	</div>
-	</div>
-	</div>
-<!--End Main-->
+	<!--SCRIPTS-->
+	<script src="assets/js/highscores.js"></script>
+	<script src="assets/js/end.js"></script>
 
-<!---Footer-->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+		</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+		</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+		</script>
 
-<!--End Footer-->
-
-<script src="highscores.js"></script>
 </body>
 
 </html>

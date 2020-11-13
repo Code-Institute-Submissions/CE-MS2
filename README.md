@@ -192,11 +192,11 @@ https://www.youtube.com/watch?v=9cKsq14Kfsw
 
 ### Acknowledgements
 
-1. Code Institute Mentor, Adbenga Adeye for direction & advice on project presentation.
+1. Code Institute Mentor, Adbenga Adeye for direction & advice on what could be improved about my project during project calls.
 
 2. Code Institute's Slack Channels and the many alunni,mentors, tutors and users who contribute to them; the many pinned announcements, pdf files, etc. were of great help.
 https://app.slack.com/client/T0L30B202/C0L316Z96
 
-3. Kevin Powell. His programming tutorials & coding livestreams on YouTube which helped me immensely over the course of the last few weeks to help me understand HTML, CSS & responsive design in more depth. 
+3. Web Dev Simplified, who made learning the functionality of Javascript easier throughout the development of this project.
 Link to his channel here
 https://www.youtube.com/channel/UCJZv4d5rbIKd4QHMPkcABCw
