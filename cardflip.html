@@ -31,194 +31,212 @@
 
 <body>
 
-<!--Nav-->
+    <!--Nav-->
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="d-flex flex-grow-1">
-        <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
-        <a class="navbar-brand" href="index.html">
-            Games Home
-        </a>
-        <div class="w-100 text-right">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar7">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="d-flex flex-grow-1">
+            <span class="w-100 d-lg-none d-block">
+                <!-- hidden spacer to center brand on mobile --></span>
+            <a class="navbar-brand" href="index.html">
+                Games Home
+            </a>
+            <div class="w-100 text-right">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar7">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
         </div>
-    </div>
-    <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar7">
-        <ul class="navbar-nav ml-auto flex-nowrap">
-            <li class="nav-item">
-                <a href="index.html" class="nav-link">Home</a>
-            <li class="nav-item">
-                <a href="guess.html" class="nav-link">Guess the number</a>
-            </li>
-            <li class="nav-item">
-                <a href="cardflip.html" class="nav-link">Card flip</a>
-            </li>
-            <li class="nav-item">
-                <a href="game.html" class="nav-link">Trivia Quiz</a>
-            </li>
-            <li class="nav-item">
-                <a href="highscores.html" class="nav-link">Trivia High Scores</a>
-            </li>
+        <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar7">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                <li class="nav-item">
+                    <a href="guess.html" class="nav-link">Guess the number</a>
+                </li>
+                <li class="nav-item">
+                    <a href="cardflip.html" class="nav-link">Card flip</a>
+                </li>
+                <li class="nav-item">
+                    <a href="game.html" class="nav-link">Trivia Quiz</a>
+                </li>
+                <li class="nav-item">
+                    <a href="highscores.html" class="nav-link">Trivia High Scores</a>
+                </li>
 
 
-        </ul>
-    </div>
-</nav>
-<!--End Nav-->
+            </ul>
+        </div>
+    </nav>
+    <!--End Nav-->
     <!--Main Game-->
     <h1 class="page-title">Flip n Match!</h1>
     <div class="overlay-text visible">
         Click to start!
     </div>
+    <!--Game overlay text when timer runs out-->
     <div id="game-over-text" class="overlay-text">
         GAME OVER
         <span class="overlay-text-small">Click to Restart</span>
     </div>
+    <!---Victory overlay text when game is completed-->
     <div id="victory-text" class="overlay-text">
         VICTORY!
         <span class="overlay-text-small">Click to Restart</span>
     </div>
-        <div class="game-container">
-            <div class="game-info-container">
-                <div class="game-info">
-                    Time: <span id="time-remaining">100</span>
-                </div>
-                <div class="game-info">
-                    Flips: <span id="flips">0</span>
-                </div>
+    <div class="game-container">
+        <div class="game-info-container">
+            <div class="game-info">
+                Time: <span id="time-remaining">100</span>
             </div>
-            <div class="card">
-                <div class="card-back card-face">
-                    <img class="question-mark" src="assets/img/questionmark.jpg">
-                </div>
-                <div class="card-front card-face">
-                    <img class="card-value" src="assets/img/card1.jpg">
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-back card-face">
-                    <img class="question-mark" src="assets/img/questionmark.jpg">
-                </div>
-                <div class="card-front card-face">
-                    <img class="card-value" src="assets/img/card1.jpg">
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-back card-face">
-                    <img class="question-mark" src="assets/img/questionmark.jpg">
-                </div>
-                <div class="card-front card-face">
-                    <img class="card-value" src="assets/img/card2.jpg">
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-back card-face">
-                    <img class="question-mark" src="assets/img/questionmark.jpg">
-                </div>
-                <div class="card-front card-face">
-                    <img class="card-value" src="assets/img/card2.jpg">
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-back card-face">
-                    <img class="question-mark" src="assets/img/questionmark.jpg">
-                </div>
-                <div class="card-front card-face">
-                    <img class="card-value" src="assets/img/card3.jpg">
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-back card-face">
-                    <img class="question-mark" src="assets/img/questionmark.jpg">
-                </div>
-                <div class="card-front card-face">
-                    <img class="card-value" src="assets/img/card3.jpg">
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-back card-face">
-                    <img class="question-mark" src="assets/img/questionmark.jpg">
-                </div>
-                <div class="card-front card-face">
-                    <img class="card-value" src="assets/img/card4.jpg">
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-back card-face">
-                    <img class="question-mark" src="assets/img/questionmark.jpg">
-                </div>
-                <div class="card-front card-face">
-                    <img class="card-value" src="assets/img/card4.jpg">
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-back card-face">
-                    <img class="question-mark" src="assets/img/questionmark.jpg">
-                </div>
-                <div class="card-front card-face">
-                    <img class="card-value" src="assets/img/card5.jpg">
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-back card-face">
-                    <img class="question-mark" src="assets/img/questionmark.jpg">
-                </div>
-                <div class="card-front card-face">
-                    <img class="card-value" src="assets/img/card5.jpg">
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-back card-face">
-                    <img class="question-mark" src="assets/img/questionmark.jpg">
-                </div>
-                <div class="card-front card-face">
-                    <img class="card-value" src="assets/img/card6.jpg">
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-back card-face">
-                    <img class="question-mark" src="assets/img/questionmark.jpg">
-                </div>
-                <div class="card-front card-face">
-                    <img class="card-value" src="assets/img/card6.jpg">
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-back card-face">
-                    <img class="question-mark" src="assets/img/questionmark.jpg">
-                </div>
-                <div class="card-front card-face">
-                    <img class="card-value" src="assets/img/card7.jpg">
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-back card-face">
-                    <img class="question-mark" src="assets/img/questionmark.jpg">
-                </div>
-                <div class="card-front card-face">
-                    <img class="card-value" src="assets/img/card7.jpg">
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-back card-face">
-                    <img class="question-mark" src="assets/img/questionmark.jpg">
-                </div>
-                <div class="card-front card-face">
-                    <img class="card-value" src="assets/img/card8.jpg">
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-back card-face">
-                    <img class="question-mark" src="assets/img/questionmark.jpg">
-                </div>
-                <div class="card-front card-face">
-                    <img class="card-value" src="assets/img/card8.jpg">
-                </div>
+            <div class="game-info">
+                Flips: <span id="flips">0</span>
             </div>
         </div>
+        <!--Card divs for back face & front face of cards-->
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="question-mark" src="assets/img/questionmark.jpg">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="assets/img/card1.jpg">
+            </div>
         </div>
-        <script src="cardflip.js"></script>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="question-mark" src="assets/img/questionmark.jpg">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="assets/img/card1.jpg">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="question-mark" src="assets/img/questionmark.jpg">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="assets/img/card2.jpg">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="question-mark" src="assets/img/questionmark.jpg">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="assets/img/card2.jpg">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="question-mark" src="assets/img/questionmark.jpg">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="assets/img/card3.jpg">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="question-mark" src="assets/img/questionmark.jpg">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="assets/img/card3.jpg">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="question-mark" src="assets/img/questionmark.jpg">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="assets/img/card4.jpg">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="question-mark" src="assets/img/questionmark.jpg">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="assets/img/card4.jpg">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="question-mark" src="assets/img/questionmark.jpg">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="assets/img/card5.jpg">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="question-mark" src="assets/img/questionmark.jpg">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="assets/img/card5.jpg">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="question-mark" src="assets/img/questionmark.jpg">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="assets/img/card6.jpg">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="question-mark" src="assets/img/questionmark.jpg">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="assets/img/card6.jpg">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="question-mark" src="assets/img/questionmark.jpg">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="assets/img/card7.jpg">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="question-mark" src="assets/img/questionmark.jpg">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="assets/img/card7.jpg">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="question-mark" src="assets/img/questionmark.jpg">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="assets/img/card8.jpg">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="question-mark" src="assets/img/questionmark.jpg">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="assets/img/card8.jpg">
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!--SCRIPTS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+        </script>
+    <script src="cardflip.js"></script>
+
 </body>
+
 </html>

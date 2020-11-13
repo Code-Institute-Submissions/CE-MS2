@@ -98,11 +98,11 @@ https://git-scm.com/downloads
       Phone models used by friends to test responsiveness: iPhone 7, iPhone XS, OnePlus7T, OnePlus6, iPhone 11 Pro, OnePlus6, Samsung Galaxy S.
       Issues were not reported with the above phones when reviews came in from my peers.
       
-      ![Friend review 1](assets/img/friendreview.PNG)
+      ![Friend review 1]()
       ________________
-      ![Friend review 2](assets/img/friendreview2.PNG)
+      ![Friend review 2]()
       ________________
-      ![Friend review 3](assets/img/friendreview3.PNG)
+      ![Friend review 3]
       
       Responsive issues were found with smaller devices such as iPhone 5 and earlier models through inspect element on chrome browser. Issues were predominantly text overflow &
       a white margin appearing on right side of screen when attempting to navigate.
@@ -127,7 +127,7 @@ https://git-scm.com/downloads
   1. Created a Github account at https://github.com
   My account url;    https://github.com/Shadyxstep
 
-  2. I uploaded all files to my Github repository located at this url;  https://github.com/Shadyxstep/CE-MS-1 which is for this individual project.
+  2. I uploaded all files to my Github repository located at this url;  https://shadyxstep.github.io/CE-MS2/index.html which is for this individual project.
 
   3. To publish the project to see it on the web, I then went into the Settings on my respository, scrolled down to the heading, GitHub Pages. Under the Source setting, I used the drop-down menu to select master branch as a publishing source and saved it.  Refreshed the github page, and you are then given a url where your page is published;
    Your site is published at https://shadyxstep.github.io/CE-MS-1/
