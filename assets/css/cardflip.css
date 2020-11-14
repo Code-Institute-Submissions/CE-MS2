@@ -142,7 +142,7 @@
 
 @media (max-width: 600px) {
     .game-container {
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(4, auto);
         margin: 25px;
     }
 

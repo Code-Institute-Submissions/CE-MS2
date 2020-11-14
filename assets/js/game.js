@@ -21,7 +21,7 @@ let questions = [];
 // Fetch function for questions from Open Trivia Database & Pulling API url
 
 fetch(
-    "https://opentdb.com/api.php?amount=10&category=18&difficulty=easy&type=multiple"
+    "https://opentdb.com/api.php?amount=10&category=17&difficulty=easy"
 )
     .then(res => {
         return res.json();
