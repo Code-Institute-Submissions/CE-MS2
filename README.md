@@ -1,5 +1,5 @@
--https://github.com/Shadyxstep/CE-MS2/blob/master/assets/img/landingpagewireframe.PNG
-# <a href="https://shadyxstep.github.io/CE-MS-1/index.html">Go Skate!</a>
+-https://github.com/Shadyxstep/CE-MS2/blob/master/assets/img/landingmockup.PNG
+# <a href="https://shadyxstep.github.io/CE-MS2/index.html">Brain Games</a>
 
 ![responsive screenshot](assets/img/responsivesc.PNG)
 
