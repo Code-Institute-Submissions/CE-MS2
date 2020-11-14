@@ -36,7 +36,7 @@ with a goal of demonstrating my ability to design and develop a responsive websi
 
   ###  Features Left to Implement
 
-  * __High Scores__ - A page that displays a longer list of high scores from each respective game.
+  * __High Scores__ - A page that displays a list of high scores from each respective game.
   
   
  ## Technologies Used
@@ -158,18 +158,16 @@ To continue with cloning, you would;
 
 ### Content
 
-   1. HTML & CSS code directly from;  Bootstrap 4.5 Snippet by Siddharth Panchal;  https://bootsnipp.com/snippets/Q0ppE "Timeline Using CSS"  Timeline Demo #11.
-      Used on my Experience page.
+   1. HTML & CSS code snippets (Nav Bar) taken from previous MS1 Project.
 
-   2.  W3schools.com; for code used on e-mail form on Contact page.     https://www.w3schools.com/
+   2.  W3schools.com;      https://www.w3schools.com/
 
    3.  Google Fonts for font styles;  https://fonts.google.com/
 
    4. All images used in this project taken from Unsplash. Free high resolution images. Link below
    https://unsplash.com/
 
-   5. Image Carousel on Testimonial page taken from Bootstrap 4, learned to implement correctly from Drew Ryan Tutorials on YouTube. Link below.
-https://www.youtube.com/watch?v=9cKsq14Kfsw
+   5. Card Flip Layout taken from Web Dev Simplified Channel on YouTube,
 
 ### Media
 
