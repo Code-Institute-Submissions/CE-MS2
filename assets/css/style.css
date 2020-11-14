@@ -169,7 +169,7 @@ h2 {
 /*--Footer Styling--*/
 
 footer {
-  padding: 2em 0 2em 0;;
+  padding: 2em 0 2em 0;
 }
 footer ul.icons{
   padding: 0;
@@ -177,7 +177,7 @@ footer ul.icons{
 }
 ul.icons li a {
   border: solid 1px rgb(222 217 217 / 50%);
-  color: rgba(144, 144, 144, 0.5);
+  color: rgba(224, 223, 223, 0.5);
   text-decoration: none;
 }
 
