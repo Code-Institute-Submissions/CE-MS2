@@ -126,8 +126,9 @@ h2 {
 }
 
 .main {
-  height: 75rem;
+  height: 80rem;
   width: 100vw;
+  margin-bottom: 5rem;
 }
 
 /*--Nav Styling--*/
@@ -274,7 +275,7 @@ input {
 
 
 
-/* Media Query */
+/* Media Queries */
 
 @media (max-width: 600px) {
   h1 {
@@ -301,18 +302,43 @@ input {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 992px;
+  }
+
+  .footer {
+    margin-top: 10rem;
+  }
+}
+
 @media screen and (min-width: 1400px) {
   .container {
     width: 1370px;
   }
+
+  .stars, .twinkling, .clouds {
+    height: 100vh;
+    width: 100vw;
+}
 }
 @media screen and (min-width: 1600px) {
   .container {
     width: 1570px;
   }
+
+  .stars, .twinkling, .clouds {
+    height: 100vh;
+    width: 100vw;
+}
 }
 @media screen and (min-width: 1900px) {
   .container {
     width: 1870px;
+  }
+
+  .stars, .twinkling, .clouds {
+    height: 100vh;
+    width: 100vw;
   }
 }
