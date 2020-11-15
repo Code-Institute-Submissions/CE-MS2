@@ -178,7 +178,7 @@ footer {
   background: transparent;
   color: #fff;
   padding: 0.25rem 0;
-  margin-top: 0;
+  margin-top: 5rem;
 }
 
 .icons {
@@ -287,3 +287,32 @@ input {
   
 }
 
+/* Large Screens & Desktops */
+
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+    height: 100vh;
+  }
+
+  .stars, .twinkling, .clouds {
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .container {
+    width: 1370px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .container {
+    width: 1570px;
+  }
+}
+@media screen and (min-width: 1900px) {
+  .container {
+    width: 1870px;
+  }
+}

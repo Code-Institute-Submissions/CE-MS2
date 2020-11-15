@@ -26,11 +26,11 @@ with a goal of demonstrating my ability to design and develop a responsive websi
 
   * __Guess the number__ - The first game of three the user can play. A random number is generated between 1-500 and the user has to guess it in 10 attempts with prompts after each input that lets the user know whether the guess was too high or too low!
 
-  * __Card Flip__  - The second game of three the user can play. 16 face down cards are randomly assorted and the user has 100 seconds to match 18 pairs whilst also displaying the number of flips.
+  * __Card Flip__  - The second game of three the user can play. 16 face down cards are randomly assorted and the user has 100 seconds to match 8 pairs whilst also displaying the number of flips.
 
-  * __Trivia__  - The third game of three which is a 10 question quiz using an API pulled from OpenTriviaDB. 100 points are awarded for each correct question and the top 5 scores will be displayed in the High Scores page.
+  * __Trivia__  - The third game of three which is a 10 question science & nature quiz using an API pulled from OpenTriviaDB. 100 points are awarded for each correct question and the top 5 scores will be displayed in the High Scores page.
 
-  * __High Scores__  - A high score page showing the top 5 user scores from the Trivia game.
+  * __High Scores__  - A high score page using local storage showing the top 5 user scores from the Trivia game.
 
 
   ###  Features Left to Implement
@@ -86,9 +86,9 @@ https://git-scm.com/downloads
          IE Explorer: displayed the navigation bar as a lighter colour than intended, see below:
          ![IE Test Nav Bar Color](assets/img/internetexplorertest.PNG)
 
-         Chrome: No particular issue with testing on this brower. Seemed to work well throughout development.
+         Chrome: No particular issue with testing on this browser. Seemed to work well throughout development.
          
-         Firefox: No particular issue with testing on this brower. Seemed to work well throughout development.
+         Firefox: No particular issue with testing on this browser. Seemed to work well throughout development.
 
          
 
@@ -114,6 +114,8 @@ https://git-scm.com/downloads
 * 1. After my Middle of project call with mentor after launching the project on GitHub live pages, I was unable to navigate through the website through Visual Studio Code Live Server plugin which allowed me to make experimental changes without pushing the code to GitHub. I had to change the directory of each html page from 'index.html' to '/CE-MS2/index.html' to allow for navigation on GitHub live pages, which would allow me to test my project on multiple devices.
 
   2. There are display issues with some questions pulled from the OpenTriviaDB displaying unnecessary characters, see below images (some of the questions contain ascii code which is not parsed on the website.)
+
+  3. Seem to be an issue with the cardflip game on iPhone 8 devices and earlier, cards display as face up upon clicking the overlay text to start the game.
  
 
  ![1. Directory issue with VS Code live server plugin](assets/img/.PNG)
