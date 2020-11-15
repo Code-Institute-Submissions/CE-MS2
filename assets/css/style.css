@@ -129,7 +129,7 @@ h2 {
 .navbar {
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 2rem;
     letter-spacing: 0.1rem;
     background: rgb(32, 32, 32) !important;
     text-align: center;
@@ -138,7 +138,7 @@ h2 {
   .navbar-brand {
       justify-content: center;
       text-align: center;
-      font-size: 1.75rem;
+      font-size: 1.5rem;
   }
 
   .nav-link {
