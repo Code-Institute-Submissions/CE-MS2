@@ -304,11 +304,11 @@ input {
 
 @media screen and (min-width: 1024px) {
   .container {
-    width: 992px;
+    width: 100vw;
   }
 
   .main {
-    height: 100vh;
+    height: 100rem;
     width: 100%;
   }
 
