@@ -10,8 +10,7 @@ with a goal of demonstrating my ability to design and develop a responsive websi
 
 ## UX
 
- The purpose of the site is to provide users with an online experience that focuses primarily providing users with the option of meeting new people through a voluntary sign up
- system. Users who sign up will be notified of other users in their area for meetups. My design is inspired by a minimalistic dark colour palette that encompasses the lifestyle associated with skateboarders around the globe.
+ The purpose of the site is to provide users with an online experience that focuses on testing users cognitive skills by putting them through a series of 3 simple games constructed using HTML5, CSS & Javascript. The site was built with minimalism in mind and features kept to a minimum in order to avoid distraction and unnecessary clutter. The user can focus solely on the functionality & problem solving prompts that the three games offer.
 
 ## Wireframes
 

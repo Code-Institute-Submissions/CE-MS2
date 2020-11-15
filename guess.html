@@ -66,39 +66,49 @@
     </nav>
 
     <!--Main-->
-    <div class="stars">
-        <div class="twinkling">
-            <div class="clouds">
-                <div class="container">
-                    <div id="guess-landing" class="flex-column flex-center justify-center">
-                        <h2 id="guess-game-title">A random number is generated between 1 - 500.</h2>
-                        </br>
-                        <h2>Try to guess it within 10 attempts.</h2>
-                        </br>
-                        <form class="guessForm">
-                            <label for="guessField" id="guess">Guess the number below:</label>
-                            <input type="text" id="guessField" class="guessField" />
-                            <input type="submit" class="btn" id="subt" value="Submit Guess">
-                            </button>
-                        </form>
-                        <div class="resultParas">
-                            <h4>Previous Guesses: <span class="guesses"></span></h4>
-                            <h4>Guesses Remaining: <span class="lastResult">10</span></h4>
-                            <hr class="block-divider">
-                            <p class="lowOrHigh"></p>
-                            <a href="/CE-MS2/guess.html" id="guess-play-btn" class="btn">Play Again</a>
+    <section class="main">
+        <div class="stars">
+            <div class="twinkling">
+                <div class="clouds">
+                    <div class="container">
+                        <div id="guess-landing" class="flex-column flex-center justify-center">
+                            <h2 id="guess-game-title">A random number is generated between 1 - 500.</h2>
+                            </br>
+                            <h2>Try to guess it within 10 attempts.</h2>
+                            </br>
+                            <form class="guessForm">
+                                <label for="guessField" id="guess">Guess the number below:</label>
+                                <input type="text" id="guessField" class="guessField" />
+                                <input type="submit" class="btn" id="subt" value="Submit Guess">
+                                </button>
+                            </form>
+                            <div class="resultParas">
+                                <h4>Previous Guesses: <span class="guesses"></span></h4>
+                                <h4>Guesses Remaining: <span class="lastResult">10</span></h4>
+                                <hr class="block-divider">
+                                <p class="lowOrHigh"></p>
+                                <a href="/CE-MS2/guess.html" id="guess-play-btn" class="btn">Play Again</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!--Footer-->
+    <footer>
+        <div class="row justify-content-center">
 
+            <div class="col-md-4 text-center">
+                <a href="https://www.facebook.com/" class="icons"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/leo_morgan" class="icons"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
     <!--End Footer-->
 
     <!--SCRIPTS-->
-    
+
     <script src="assets/js/guess.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
