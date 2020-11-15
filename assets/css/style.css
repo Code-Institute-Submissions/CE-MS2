@@ -169,16 +169,38 @@ h2 {
 /*--Footer Styling--*/
 
 footer {
-  padding: 2em 0 2em 0;
+  background-color: #fafafa;
+  color: #fff;
+  padding: 0.25rem 0;
+  margin-top: 50rem;
+  width:100%;
 }
-footer ul.icons{
-  padding: 0;
-  margin: 0;
+
+footer h6 p {
+    font-size: 12px;
 }
-ul.icons li a {
-  border: solid 1px rgb(222 217 217 / 50%);
-  color: rgba(224, 223, 223, 0.5);
-  text-decoration: none;
+
+footer img {
+  height: 1rem;
+  margin: 0.1rem 0;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer svg.svg-inline--fa {
+  margin: 0.5rem 0.75rem;
+}
+
+footer svg.svg-inline--fa:hover {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+hr.footer-shell {
+  margin: 1px;
+  border-top: 0.05rem solid rgba(255, 255, 255, 0.6);
+  width: 100%;
 }
 
 /*--Button Styling--*/
@@ -267,11 +289,12 @@ input {
 @media (max-width: 600px) {
   h1 {
       font-size: 3rem;
-      margin-top: 2rem;
+      margin: 2rem 2rem;
   }
 
   h2 {
       font-size: 2rem;
+      margin: 2rem 2rem;
   }
   
 }
