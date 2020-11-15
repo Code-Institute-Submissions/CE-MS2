@@ -169,11 +169,10 @@ h2 {
 /*--Footer Styling--*/
 
 footer {
-  background-color: #fafafa;
+  background-color: #f5f5f5;
   color: #fff;
   padding: 0.25rem 0;
-  margin-top: 50rem;
-  width:100%;
+  margin-top: 0;
 }
 
 footer h6 p {
@@ -288,13 +287,12 @@ input {
 
 @media (max-width: 600px) {
   h1 {
-      font-size: 3rem;
-      margin: 2rem 2rem;
+      font-size: 2rem;
+      margin: 1rem 1rem;
   }
 
   h2 {
-      font-size: 2rem;
-      margin: 2rem 2rem;
+      font-size: 1.5rem;
   }
   
 }
