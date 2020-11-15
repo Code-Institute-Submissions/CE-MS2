@@ -307,9 +307,12 @@ input {
     width: 992px;
   }
 
-  .footer {
-    margin-top: 60rem;
+  .main {
+    height: 100vh;
+    width: 100%;
   }
+
+ 
 }
 
 @media screen and (min-width: 1400px) {
