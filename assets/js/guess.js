@@ -46,6 +46,7 @@ function validateGuess(guess){
     }
 }
 
+//Check guess function
 function checkGuess(guess){
     //Display clue if guess was too high or too low
     if (guess === randomNumber){

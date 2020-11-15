@@ -74,8 +74,10 @@ https://git-scm.com/downloads
  ## Testing
 
  1.  http://ami.responsivedesign.is/  has been used to see how the site performs on different devices and viewports. The images found at the top of this document was screenshotted from this website to display responsiveness amongst devices of different sizes.
+
+ 2. I sought out potential issues and incompatibilities with my project by sharing my project publicly on social media & asking people to report their user experience & any bugs they encountered while using the site. Photos below show feedback from various different people with different devices used to access the live page on github.
  
- 2.  **Desktop**
+ 3.  **Desktop**
      
        * Tested viewport on Google Chrome, Internet Edge & Mozilla Firefox browsers; all pages, links on those pages, and footer icon links perform well on all viewport sizes. Developer tools were also used on all browsers for the various viewport sizes.
          
@@ -101,7 +103,7 @@ https://git-scm.com/downloads
       ________________
       ![Friend review 2]()
       ________________
-      ![Friend review 3]
+      ![Friend review 3]()
       
       Responsive issues were found with smaller devices such as iPhone 5 and earlier models through inspect element on chrome browser. Issues were predominantly text overflow &
       a white margin appearing on right side of screen when attempting to navigate.
@@ -109,16 +111,16 @@ https://git-scm.com/downloads
 
  4.  **Open Issues:**  
 
- My main issue developing this website was viewport issues and heading/paragraph text overflowing into footer on small mobile devices.
- My contact form also seemed to overspill on some medium devices but this was easily resolved through resizing the form.
- I also had github issues deploying my code to a repository through Terminal, this was resolved through advice through my mentor. 
+* 1. After my Middle of project call with mentor after launching the project on GitHub live pages, I was unable to navigate through the website through Visual Studio Code Live Server plugin which allowed me to make experimental changes without pushing the code to GitHub. I had to change the directory of each html page from 'index.html' to '/CE-MS2/index.html' to allow for navigation on GitHub live pages, which would allow me to test my project on multiple devices.
+
+  2. There are display issues with some questions pulled from the OpenTriviaDB displaying unnecessary characters, see below images (some of the questions contain ascii code which is not parsed on the website.)
  
 
- ![Text Overflow error](assets/img/textoverflow-error.PNG)
+ ![1. Directory issue with VS Code live server plugin](assets/img/.PNG)
 
- ![White margin bug on smaller screens](assets/img/textoverflow-error.PNG)
+ ![2. Question display issues with some questions pulled from OpenTriviaDB](assets/img/.PNG)
 
- ![Margin error on small devices when navigating](assets/img/marginerror.PNG)
+ ![](assets/img/.PNG)
 
          
 ## Deployment
@@ -129,7 +131,7 @@ https://git-scm.com/downloads
   2. I uploaded all files to my Github repository located at this url;  https://shadyxstep.github.io/CE-MS2/index.html which is for this individual project.
 
   3. To publish the project to see it on the web, I then went into the Settings on my respository, scrolled down to the heading, GitHub Pages. Under the Source setting, I used the drop-down menu to select master branch as a publishing source and saved it.  Refreshed the github page, and you are then given a url where your page is published;
-   Your site is published at https://shadyxstep.github.io/CE-MS-1/
+   Your site is published at https://shadyxstep.github.io/CE-MS2/
 
   4.  To run this code on your local machine, you would go to my respository at 
 https://github.com/Shadyxstep   and on the home page on the right hand side just above all the files, you will see a green button that says,
@@ -137,7 +139,7 @@ https://github.com/Shadyxstep   and on the home page on the right hand side just
 To continue with cloning, you would;
   * Open Git Bash
   * Change the current working directory to the location where you want the cloned directory to be made.
-  * Type git clone, and then paste this URL; https://github.com/Shadyxstep/CE-MS-1.git      Press Enter. Your local clone will be created.
+  * Type git clone, and then paste this URL; https://github.com/Shadyxstep/CE-MS2.git      Press Enter. Your local clone will be created.
 
   For more information about the above process; https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository
 
@@ -170,8 +172,7 @@ To continue with cloning, you would;
 
 ### Media
 
-   1. Image Carousel on Testimonial page taken from Bootstrap 4, learned to implement correctly from Drew Ryan Tutorials on YouTube. Link below.
-    https://www.youtube.com/watch?v=9cKsq14Kfsw
+   1. Visual Studio Code & associated plugins were used to write up the code & preview project on a live server.
 
    2. Am I Responsive web site for checking responsiveness on all Apple devices screen sizes;
    http://ami.responsivedesign.is/
@@ -183,8 +184,9 @@ To continue with cloning, you would;
    5. https://stackoverflow.com/ 
       https://www.youtube.com 
       https://www.codeinstitute.com
+      https://www.w3schools.com
       
-      These websites were used as a resource for finding answers to all types of coding problems.
+      These websites were used as a resource for finding answers to all types of coding problems encountered during the development of this project.
 
 
 ### Acknowledgements
