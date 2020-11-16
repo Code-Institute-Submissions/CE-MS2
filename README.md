@@ -1,12 +1,11 @@
--https://github.com/Shadyxstep/CE-MS2/blob/master/assets/img/landingmockup.PNG
 # <a href="https://shadyxstep.github.io/CE-MS2/index.html">Brain Games</a>
 
-![responsive screenshot](assets/img/responsivesc.PNG)
+![responsive screenshot](assets/img/amiresponsivems2.PNG)
 
 This site is 
 
 My second development project as a Full Stack software developer student of the Code Institute (https://codeinstitute.net/), 
-with a goal of demonstrating my ability to design and develop a responsive website that focuses on developing 3 simple games.
+with a goal of demonstrating my ability to design and develop a responsive website that focuses on developing 3 simple games using HTML, CSS & Javascript.
 
 ## UX
 
@@ -14,11 +13,12 @@ with a goal of demonstrating my ability to design and develop a responsive websi
 
 ## Wireframes
 
-1. Landing page link: https://wireframe.cc/0T2e8s
+1. 
 
-![Landing page initial mockup wireframe](assets/img/landingpagemockup.PNG)
+![Landing page first mockup wireframe](assets/img/landingpagewireframe.PNG)
 
-![About page on Tablet device mockup](assets/img/abouttabletdevice.PNG)
+![Landing page updated mockup wireframe](assets/img/landingpagemockup.PNG)
+
 
 ### Existing Features
 
@@ -77,56 +77,62 @@ https://git-scm.com/downloads
 
  1.  http://ami.responsivedesign.is/  has been used to see how the site performs on different devices and viewports. The images found at the top of this document was screenshotted from this website to display responsiveness amongst devices of different sizes.
 
+ ![Cardflip game responsive screenshot](assets/img/cardflipamiresponsive.PNG)
+
  2. I sought out potential issues and incompatibilities with my project by sharing my project publicly on social media & asking people to report their user experience & any bugs they encountered while using the site. Photos below show feedback from various different people with different devices used to access the live page on github.
  
  3.  **Desktop**
      
-       * Tested viewport on Google Chrome, Internet Edge & Mozilla Firefox browsers; all pages, links on those pages, and footer icon links perform well on all viewport sizes. Developer tools were also used on all browsers for the various viewport sizes.
+       * Tested viewport on Google Chrome, Internet Edge & Mozilla Firefox browsers; all pages, links on those pages, and footer icon links perform well on all viewport sizes. Developer tools were used with Chrome & Firefox.
+
+       Console.log() function was heavily used throughout development of this project to ensure the Javascript code was working as intended.
          
          Notes when testing across multiple browsers:
 
-         IE Explorer: displayed the navigation bar as a lighter colour than intended, see below:
-         ![IE Test Nav Bar Color](assets/img/internetexplorertest.PNG)
+         IE Explorer: Cardflip & Trivia Quiz broken on IE Explorer
+         Trivia Quiz does not display, Cardflip game structure broken and overlay text prompt is not clickable.
+         ![Project loses functionality when operated through IE Explorer](assets/img/IEissue.PNG)
 
          Chrome: No particular issue with testing on this browser. Seemed to work well throughout development.
          
          Firefox: No particular issue with testing on this browser. Seemed to work well throughout development.
 
          
-
  3.  **Mobile**
 
       *  Tested initially on my OnePlus 6T plus. 
       Website was shared on my personal social media to obtain peer review from friends. 
-      Phone models used by friends to test responsiveness: iPhone 7, iPhone XS, OnePlus7T, OnePlus6, iPhone 11 Pro, OnePlus6, Samsung Galaxy S.
+      Phone & device models used by friends to visit the site: 
+      iPhone 7, iPhone XS, iPhone8, OnePlus7T, OnePlus6, iPhone 11 Pro, OnePlus6, Samsung Galaxy S, iPad Pro.
       Issues were not reported with the above phones when reviews came in from my peers.
       
-      ![Friend review 1]()
-      ________________
-      ![Friend review 2]()
-      ________________
-      ![Friend review 3]()
-      
-      Responsive issues were found with smaller devices such as iPhone 5 and earlier models through inspect element on chrome browser. Issues were predominantly text overflow &
-      a white margin appearing on right side of screen when attempting to navigate.
-      See images in Open issues section for further reference 
+      Responsive issues were found with smaller devices such as iPhone 5 and earlier models through inspect element on chrome browser. 
+      The issues with smaller screens were predominantly content overflow.
+
+      ![Landing page on my mobile device, OnePlus6T](assets/img/oneplus6Tscreen.jpg)
+
+      ![Guess the number screenshot](assets/img/guessnumberscreenshot.jpg)
+
+
 
  4.  **Open Issues:**  
 
 * 1. After my Middle of project call with mentor after launching the project on GitHub live pages, I was unable to navigate through the website through Visual Studio Code Live Server plugin which allowed me to make experimental changes without pushing the code to GitHub. I had to change the directory of each html page from 'index.html' to '/CE-MS2/index.html' to allow for navigation on GitHub live pages, which would allow me to test my project on multiple devices.
 
-  2. There are display issues with some questions pulled from the OpenTriviaDB displaying unnecessary characters, see below images (some of the questions contain ascii code which is not parsed on the website.)
+  2. There are display issues with some questions pulled from the OpenTriviaDB displaying unnecessary characters, see below images (some of the questions contain ascii code which is not parsed on the website.) I have been unable to resolve this through my code and still unsure of whether it is an error on my behalf or from the API the questions were pulled from.
 
-  3. Seem to be an issue with the cardflip game on iPhone 8 devices and earlier, cards display as face up upon clicking the overlay text to start the game.
+  3. There was a reported issue amongst 2 of my peers with the cardflip game displaying cards face up on their iPhone 7 / 8 device. Although other peers with the same devices reported no problems. I implemented media queries for the cardflip game to address this but suspect it could have possibly been an iOS issue on their device.
 
-  4. 
+  4. Content overflow issues with small screens like iPhone 5, added in further media queries and scaled content to fix this.
  
 
  ![1. Directory issue with VS Code live server plugin](assets/img/VSLiveserverissue.PNG)
 
  ![2. Question display issues with some questions pulled from OpenTriviaDB](assets/img/triviaapiquestionissue.PNG)
 
- ![](assets/img/.PNG)
+ ![3. iPhone 8 errors with Cardflip game](assets/img/cardfliperroriphone8.jpg)
+
+ ![4. iPhone 8 iOS13 error with Cardflip game](assets/img/cardflipgameerror2iphone8.jpg)
 
          
 ## Deployment
@@ -136,13 +142,13 @@ https://git-scm.com/downloads
 
   2. I uploaded all files to my Github repository located at this url;  https://shadyxstep.github.io/CE-MS2/index.html which is for this individual project.
 
-  3. To publish the project to see it on the web, I then went into the Settings on my respository, scrolled down to the heading, GitHub Pages. Under the Source setting, I used the drop-down menu to select master branch as a publishing source and saved it.  Refreshed the github page, and you are then given a url where your page is published;
+  3. To publish the project to see it on the web, I then went into the Settings on my repository, scrolled down to the heading, GitHub Pages. Under the Source setting, I used the drop-down menu to select master branch as a publishing source and saved it.  Refreshed the github page, and you are then given a url where your page is published;
    Your site is published at https://shadyxstep.github.io/CE-MS2/
 
-  4.  To run this code on your local machine, you would go to my respository at 
-https://github.com/Shadyxstep   and on the home page on the right hand side just above all the files, you will see a green button that says,
-"Clone or download", this button will give you options to clone with HTTPS, open in desktop or download as a zip file.
-To continue with cloning, you would;
+  4.  To run this code on your local machine, you would go to my repository at 
+   https://github.com/Shadyxstep   and on the home page on the right hand side just above all the files, you will see a green button that says,
+   "Clone or download", this button will give you options to clone with HTTPS, open in desktop or download as a zip file.
+   To continue with cloning, you would;
   * Open Git Bash
   * Change the current working directory to the location where you want the cloned directory to be made.
   * Type git clone, and then paste this URL; https://github.com/Shadyxstep/CE-MS2.git      Press Enter. Your local clone will be created.
@@ -165,16 +171,18 @@ To continue with cloning, you would;
 
 ### Content
 
-   1. HTML & CSS code snippets (Nav Bar) taken from previous MS1 Project.
+   1. HTML & CSS code snippets (Nav Bar) taken from previous MS1 Project, Template previously taken from Bootstrap 4 documentation
 
-   2.  W3schools.com;      https://www.w3schools.com/
+   2.  W3schools.com;  https://www.w3schools.com/
 
    3.  Google Fonts for font styles;  https://fonts.google.com/
 
    4. All images used in this project taken from Unsplash. Free high resolution images. Link below
    https://unsplash.com/
 
-   5. Card Flip Layout taken from Web Dev Simplified Channel on YouTube,
+   5. Card Flip Layout taken from Web Dev Simplified Channel on YouTube.
+
+   6. Trivia Quiz was built with multiple different influences from tutorials on YouTube.
 
 ### Media
 
@@ -193,6 +201,7 @@ To continue with cloning, you would;
       https://www.w3schools.com
       
       These websites were used as a resource for finding answers to all types of coding problems encountered during the development of this project.
+
 
 
 ### Acknowledgements
