@@ -173,6 +173,10 @@ h2 {
     color: #000;
   }
 
+  .navbar-toggler.collapsed, .navbar-toggler {
+    height: 28px;
+  }
+
 /*--Footer Styling--*/
 
 footer {
@@ -198,10 +202,10 @@ footer {
 
 .btn {
     font-size: 1.75rem;
-    padding: 2rem 0;
+    padding: 1.75rem 0;
     width: 20rem;
     text-align: center;
-    margin-bottom: 1.75rem;
+    margin-bottom: 1.5rem;
     text-decoration: none;
     color: rgb(0, 0, 0);
     border-radius: 20px;
@@ -305,6 +309,10 @@ input {
       height: 100vh;
   }
 
+  .icons {
+    font-size: 24px;
+    padding: 5px;
+  }
 }
 
 @media (max-width: 600px) {

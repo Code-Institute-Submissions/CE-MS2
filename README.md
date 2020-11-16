@@ -118,6 +118,8 @@ https://git-scm.com/downloads
   2. There are display issues with some questions pulled from the OpenTriviaDB displaying unnecessary characters, see below images (some of the questions contain ascii code which is not parsed on the website.)
 
   3. Seem to be an issue with the cardflip game on iPhone 8 devices and earlier, cards display as face up upon clicking the overlay text to start the game.
+
+  4. 
  
 
  ![1. Directory issue with VS Code live server plugin](assets/img/VSLiveserverissue.PNG)
