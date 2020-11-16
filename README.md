@@ -16,9 +16,9 @@ with a goal of demonstrating my ability to design and develop a responsive websi
 1. 
 
 ![Landing page first mockup wireframe](assets/img/landingpagewireframe.PNG)
-
+* __First Wireframe__
 ![Landing page updated mockup wireframe](assets/img/landingpagemockup.PNG)
-
+* __Updated wireframe__
 
 ### Existing Features
 
@@ -78,6 +78,7 @@ https://git-scm.com/downloads
  1.  http://ami.responsivedesign.is/  has been used to see how the site performs on different devices and viewports. The images found at the top of this document was screenshotted from this website to display responsiveness amongst devices of different sizes.
 
  ![Cardflip game responsive screenshot](assets/img/cardflipamiresponsive.PNG)
+* __^Cardflip amiresponsive screenshot__
 
  2. I sought out potential issues and incompatibilities with my project by sharing my project publicly on social media & asking people to report their user experience & any bugs they encountered while using the site. Photos below show feedback from various different people with different devices used to access the live page on github.
  
@@ -89,13 +90,14 @@ https://git-scm.com/downloads
          
          Notes when testing across multiple browsers:
 
-         IE Explorer: Cardflip & Trivia Quiz broken on IE Explorer
-         Trivia Quiz does not display, Cardflip game structure broken and overlay text prompt is not clickable.
-         ![Project loses functionality when operated through IE Explorer](assets/img/IEissue.PNG)
-
          Chrome: No particular issue with testing on this browser. Seemed to work well throughout development.
          
          Firefox: No particular issue with testing on this browser. Seemed to work well throughout development.
+
+IE Explorer: Cardflip & Trivia Quiz broken on IE Explorer
+Trivia Quiz does not display, Cardflip game structure broken and overlay text prompt is not clickable.
+![Project loses functionality when operated through IE Explorer](assets/img/IEissue.PNG)
+
 
          
  3.  **Mobile**
