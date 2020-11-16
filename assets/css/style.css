@@ -360,6 +360,11 @@ input {
     height: 100vh;
     width: 100vw;
   }
+  
+  .icons {
+    padding: 2rem 2rem;
+    font-size: 40px;
+  }
 
  
 }
