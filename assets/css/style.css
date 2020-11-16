@@ -291,7 +291,6 @@ input {
   
   h1 { 
       font-size: 3rem;
-      margin-top: 1rem;
   }
 
   h2 {
@@ -300,6 +299,7 @@ input {
 
   .main {
       height: 80vh;
+      margin-bottom: 3rem;
   }
 
   .container {
