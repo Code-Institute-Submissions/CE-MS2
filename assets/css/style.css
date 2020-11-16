@@ -290,15 +290,15 @@ input {
   }
   
   h1 { 
-      font-size: 3rem;
+      font-size: 2.5rem;
   }
 
   h2 {
-      font-size: 2.25rem;
+      font-size: 1.25rem;
   }
 
   .main {
-      height: 80vh;
+      height: 85vh;
       margin-bottom: 3rem;
   }
 
@@ -308,6 +308,7 @@ input {
   }
 
   .icons {
+    padding: 2rem 0;
     font-size: 28px;
   }
 }
