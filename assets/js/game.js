@@ -39,21 +39,22 @@ fetch(
             formattedQuestion.answer = Math.floor(Math.random() * 4) + 1;
             answerChoices.splice(
                 formattedQuestion.answer - 1,
-                 0,
+                0,
                 loadedQuestion.correct_answer
-                );
+            );
 
-                answerChoices.forEach((choice, index) => {
-                    formattedQuestion["choice" + (index + 1)] = choice;
-                });
+            answerChoices.forEach((choice, index) => {
+                formattedQuestion["choice" + (index + 1)] = choice;
+            });
 
-                return formattedQuestion;
+            return formattedQuestion;
         });
-        
+
         //Start Game function
         startGame();
     })
 
+    //Lets user know there is an error
     .catch(err => {
         console.error(err);
     });
@@ -77,17 +78,17 @@ startGame = () => {
 //Iterates through questions remaining
 getNewQuestion = () => {
 
-    if(availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+    if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         //Save score after ending game
         localStorage.setItem("mostRecentScore", score);
         //Go to end page
         return window.location.assign("/CE-MS2/end.html");
     }
     questionCounter++;
-    
+
     //Declare Progress Bar %
     progressText.innerText = `Question: ${questionCounter}/${MAX_QUESTIONS}`;
-    
+
     //Updates Progress Bar
     progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
 
@@ -95,30 +96,30 @@ getNewQuestion = () => {
     currentQuestion = availableQuestions[questionIndex];
     question.innerText = currentQuestion.question;
 
-        choices.forEach(choice => {
-            const number = choice.dataset["number"];
-            choice.innerText = currentQuestion["choice" + number];
-        });
+    choices.forEach(choice => {
+        const number = choice.dataset["number"];
+        choice.innerText = currentQuestion["choice" + number];
+    });
 
-        availableQuestions.splice(questionIndex, 1);
-        acceptingAnswers = true;
+    availableQuestions.splice(questionIndex, 1);
+    acceptingAnswers = true;
 };
 
 //Click event function for selecting displayed answers
 choices.forEach(choice => {
     choice.addEventListener('click', e => {
-        if(!acceptingAnswers) return;
+        if (!acceptingAnswers) return;
 
         acceptingAnswers = false;
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset["number"];
-        
+
         //Ternary operator to display whether selected answer is true/false
         const classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
-        
+
 
         //Increment score by 100 if answer is correct
-        if(classToApply == 'correct') {
+        if (classToApply == 'correct') {
             incrementScore(SCORE_POINTS);
         }
 
@@ -133,11 +134,10 @@ choices.forEach(choice => {
 });
 
 incrementScore = num => {
-    score +=num;
+    score += num;
     scoreText.innerText = score;
 };
 
 
 
 
-    

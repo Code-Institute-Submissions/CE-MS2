@@ -36,6 +36,8 @@ with a goal of demonstrating my ability to design and develop a responsive websi
   ###  Features Left to Implement
 
   * __High Scores__ - A page that displays a list of high scores from each respective game.
+
+  *__Trivia Quiz Topics Extension__ - Further options for the user to select their desired topic before taking the quiz. The only one available on the site is a nature & science general quiz with the questions fetched from OpenTriviaDB API. 
   
   
  ## Technologies Used
@@ -118,9 +120,9 @@ https://git-scm.com/downloads
   3. Seem to be an issue with the cardflip game on iPhone 8 devices and earlier, cards display as face up upon clicking the overlay text to start the game.
  
 
- ![1. Directory issue with VS Code live server plugin](assets/img/.PNG)
+ ![1. Directory issue with VS Code live server plugin](assets/img/VSLiveserverissue.PNG)
 
- ![2. Question display issues with some questions pulled from OpenTriviaDB](assets/img/.PNG)
+ ![2. Question display issues with some questions pulled from OpenTriviaDB](assets/img/triviaapiquestionissue.PNG)
 
  ![](assets/img/.PNG)
 

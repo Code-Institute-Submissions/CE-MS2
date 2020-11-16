@@ -155,3 +155,17 @@
 
 
 }
+
+/*Small Screens*/
+
+@media (max-width: 568px) {
+    .card {
+        height: 150px;
+        width: 100px;
+    }
+
+    .game-container {
+        grid-template-columns: repeat(3, auto);
+        margin: 10px;
+    }
+}
